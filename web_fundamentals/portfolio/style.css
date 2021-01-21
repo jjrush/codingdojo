@@ -1,0 +1,176 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper{
+    width: 950px;
+    background-image: linear-gradient(#6F5964, #1D0C10);
+    margin: 0px auto;
+}
+
+#wrapper h1, h2{
+    display: inline-block;
+    padding: 10px;
+}
+
+#wrapper h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 25px;
+}
+
+.right-justify-description {
+    margin-left: 285px;
+}
+
+#header{
+    min-height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.main{
+    min-height: 265px;
+    width: 400px;
+    background-image: linear-gradient(to top left, #DBCCD9, white);
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.main a:link {
+    color: black
+}
+
+.left-content {
+    width: 394px;
+    margin-left: 27px;
+    margin-right: 20px;
+    border: 5px solid grey;
+}
+
+#profile-pic {
+    display: block;
+}
+
+.left-content img {
+    width: 394px;
+    height: 265px;
+    margin: 0px;
+}
+
+.right-content {
+    height: 274px;
+    width: 448px;
+    margin-left: 10px
+}
+
+.main h3 {
+    background: #415C66;
+    background: linear-gradient(to bottom right, #415C66, #5830C1);
+    color: white;
+    padding: 2px 10px;
+}
+
+.main p, a {
+    padding: 2px 10px;
+}
+
+.column-content {
+    display: inline-block;
+    margin-left: 15px;
+    width: 270px;
+    vertical-align: top;
+    margin-right: 20px;
+    background-image: linear-gradient(to top left, #DBCCD9, white);
+}
+
+.column-top {
+    height: 400px;
+}
+
+.column-content img {
+    display: block;
+    
+}
+
+.column-content h3 {
+    background: linear-gradient(to bottom right, #415C66, #5830C1);
+    width: 250px;
+    padding: 2px 10px;
+    color: white;
+    
+}
+
+.column-content p {
+    /* display: inline-block; */
+    padding: 10px;
+    /* width: 260px; */
+}
+.left-column {
+    margin-left: 25px;
+}
+
+.column-main-imgs {
+    width: 270px;
+}
+
+.column-content li {
+    display: inline-block;
+}
+.technology-icons {
+    width: 35px;
+    margin: 5px;
+}
+
+.company-link {
+    border-radius: 10px;
+    background-color: green;
+    border: 2px solid black;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.lamode {
+    margin-left: 100px;
+}
+.family-contacts {
+    margin-left: 80px;
+}
+
+.five-eleven {
+    margin-left: 100px;
+}
+
+.column-bottom {
+    padding-bottom: 20px;
+}
+
+#foot {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    min-height: 60px;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+#foot img {
+    width: 20px;
+}
+
+#foot li {
+    display: inline-block;
+}
+
+#foot ul {
+    margin-left: 250px;
+}
+
+#foot p {
+    margin-left: 350px;
+}
