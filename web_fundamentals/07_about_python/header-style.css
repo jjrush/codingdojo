@@ -1,0 +1,62 @@
+.header {
+    display: inline-block;
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.logo {
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.search-wrapper {
+    
+    vertical-align: top;
+    line-height: 100px;
+    display: inline-block;
+    padding: 0px;
+}
+
+.searchbar {
+    margin-left: 300px;
+    display: inline-block;
+    background-color: grey;
+    width: 250px;
+    height: 40px;
+    border-radius: 15px;
+    
+    line-height: 40px;
+    vertical-align: top;
+
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.searchbar input {
+    margin-left: 40px;
+    color: grey;
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: middle;
+    border: 1px black;
+}
+
+.searchbar ::placeholder {
+    margin-left: 40px;
+}
+
+.searchbar button {
+    display: inline-block;
+    width: 40px;
+    height: 35px; 
+    line-height: 35px;
+    vertical-align: middle;
+    color: white;
+    background-color: #245076;
+    border-radius: 10px;
+}
+

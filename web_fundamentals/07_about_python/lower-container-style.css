@@ -1,0 +1,64 @@
+.page-divider {
+    width: 970px;
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.lower-container {
+    width: 970px;
+    height: 250px;
+    background-color: white;
+    
+    padding: 2px;
+}
+
+.lower-container p {
+    width: 400px;
+    margin-left: 45px;
+}
+
+.lower-container ul {
+    list-style: none;
+    
+}
+
+.lower-container li::before {
+	content: "\2964";
+	color: lightblue;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+.lower-container-left {
+    display: inline-block;
+    width: 480px;
+    text-align: center;
+}
+
+.lower-container-right {
+    display: inline-block;
+    width: 480px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.lower-emphasis {
+    background-color: #73A7D5;
+    height: 3px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.lower-container h3 {
+    margin-bottom: 5px;
+}
+
+.lower-container a:link {
+    color: lightblue;
+}
+
+.lower-container a:visited {
+    color: lightblue;
+}

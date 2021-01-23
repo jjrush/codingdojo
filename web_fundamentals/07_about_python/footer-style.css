@@ -1,0 +1,29 @@
+.footer {
+    background-color: #245076;
+    width: 970px;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 30px;
+    
+}
+
+.footer a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
