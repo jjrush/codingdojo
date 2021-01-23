@@ -1,0 +1,11 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    background-color: #245076;
+    min-height: 900px;
+    width: 970px;
+    margin: auto;
+}

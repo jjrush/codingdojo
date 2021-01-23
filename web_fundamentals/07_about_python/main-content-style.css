@@ -1,0 +1,65 @@
+.main-content-wrapper {
+	width: 900px;
+}
+
+.navigation {
+	display: inline-block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.navigation ul {
+	display: inline-block;
+	margin-left: 70px;
+	list-style: none;
+}
+
+.navigation a:link {
+	color: white;
+}
+
+.navigation a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.navigation li {
+	color: #245076;
+	padding: 5px;
+}
+
+.navigation li::before {
+	content: "\2964";
+	color: white;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+.main-content {
+	display: inline-block;
+	width: 550px;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-left: 75px;
+}
+
+.main-content p {
+	color: white;
+}
+
+.main-content ul {
+	list-style: none;
+}
+
+.main-content li {
+	color: gold;
+	padding: 4px;
+}
+
+#quote-attribute {
+	color: white;
+	margin-top: 5px;
+}
+
+
