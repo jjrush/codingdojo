@@ -1,0 +1,103 @@
+I guessed function 9's output incorrectly cause I incremented the index along with the +2 and printed them together so I guessed 3, 6, 9 instead of 2, 5, 8, 11.
+
+Output for 1
+35
+
+Output for 2
+8
+
+Output for 3
+6
+
+Output for 4
+3
+9
+
+Output for 5
+40
+
+Output for 6
+4
+
+Output for 7
+10 3
+30
+
+Output for 8
+3
+4
+
+Output for 9
+2
+5
+8
+11
+
+Output for 10
+Prints 0 to 10 for a(0,10)
+Then prints 0 to 10 again as well as the return which is 0 (10 * 0)
+
+0
+1
+2
+...
+9
+0
+1
+2
+...
+9
+0
+
+Output for 11
+Assuming it was called (which it doesn't look like it gets called), it would print the below:
+0
+1
+2
+...
+9
+0    <- "i"
+0
+1
+...
+9
+1    <- "i"
+0
+1
+...
+9   
+And so forth until "i" is 10
+
+
+Output for 12
+Again, this function is seemingly not called but were it the output would be:
+0 0
+0 1
+0 2
+...
+0 9
+10 0
+1 0
+1 1
+1 2
+...
+1 9
+10 1
+Adn so on until "i" is 10
+9 0
+9 1
+9 2
+...
+9 9
+10 9
+
+Output for 13
+10
+
+Output for 14
+15
+10
+
+Output for 15
+15
+15
