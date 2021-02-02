@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 1000px;
+    height: 4000px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.jquery-function h1 {
+    display: block;
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+
+.jquery-function button {
+    display: block;
+    margin-left: 40px;
+}
+
+.jquery-function p img {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.button-div {
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+}
+
+.target-div {
+    display: inline-block;
+    width: 450px;
+}
+
+.page-divider {
+    width: 950px;
+    height: 5px;
+    background-color: black;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+.orange-text {
+    color: orange;
+}
+
+#class-test {
+    background-color: teal;
+}
