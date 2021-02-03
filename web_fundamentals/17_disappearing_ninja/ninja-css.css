@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 1000px;
+    height: 4000px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+#wrapper h1 {
+    margin-left: 35%;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-left: 96px;
+}
+
+#img-wrapper {
+    display: inline-block;
+    padding: 0px;
+    margin: -4px;
+}
+
+#img-wrapper img {
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#restore-button {
+    margin-top: 20px;
+    margin-left: 445px;
+}
