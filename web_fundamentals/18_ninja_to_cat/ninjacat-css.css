@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 1000px;
+    height: 4000px;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+#wrapper h1 {
+    margin-left: 41%;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-left: 405px;
+}
+
+.img-wrapper img {
+    margin-bottom: -4px;
+}
