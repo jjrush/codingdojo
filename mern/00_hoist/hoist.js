@@ -7,7 +7,7 @@ var hello = 'world';
 console.log(hello);  
 
 // Guess
-// world
+// undefined
 
 ////////////////////////////////////////////////
 
