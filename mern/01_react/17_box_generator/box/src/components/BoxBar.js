@@ -1,24 +1,35 @@
 import React, { useState } from 'react';
 import './BoxBar.css';
 
-const BoxBar = () => {
-    const [ box, setBox ] = useState("");
+const BoxBar = ({setBox, box}) => {
+    const [newColor, setNewColor] = useState("");
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setBox( e.target.value )
-        e.target.value=""
-    }
+    const onChange = (e) => {
+        setNewColor(e.target.value);
+    };
+
+    const grabColor = () => {
+        setBox({
+            ...box,
+            colors: [...box.colors, newColor],
+        });
+        // clears out the input value attribute
+        setNewColor("");
+    };
 
     return (
-        <form>
+        <div>
             <label>Color</label>
-            <input 
+            <input
+                onChange={onChange}
                 type="text"
+                value={newColor}
             />
-            <button value="test" onClick={ handleSubmit }>Add</button>
-        </form>
-    )
-}
+            <button onClick={grabColor}>
+                Add Box
+            </button>
+        </div>
+        );
+};
 
 export default BoxBar;
