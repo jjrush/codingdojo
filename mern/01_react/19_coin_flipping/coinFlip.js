@@ -17,5 +17,30 @@ function fiveHeadsSync() {
     }
     return `It took ${attempts} tries to flip five "heads"`;
 }
-console.log( fiveHeadsSync() );
-console.log( "This is run after the fiveHeadsSync function completes" );
+
+const fiveHeadsSyncPromise = new Promise( (resolve,reject) => {
+    let headsCount = 0;
+    let attempts = 0;
+    while(headsCount < 5) {
+        attempts++;
+        let result = tossCoin();
+        console.log(`${result} was flipped`);
+        if(result === "heads") {
+            headsCount++;
+        } else {
+            headsCount = 0;
+        }
+        if ( attempts > 100 )
+        {
+            reject(`I took over 100 attempts and have therefore have been terminated`)
+        }
+    }
+
+    resolve(`It took ${attempts} tries to flip five "heads"`);
+});
+
+fiveHeadsSyncPromise
+    .then( res => console.log(res))
+    .catch( err  => console.log(err))
+
+console.log( "This is NOT run after the fiveHeadsSync function completes" );
