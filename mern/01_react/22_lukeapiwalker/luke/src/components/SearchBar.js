@@ -5,10 +5,11 @@ import axios from 'axios';
 const SearchBar = (props) => {
     const { id, setID, choice, setChoice, display, setDisplay } = props;
 
-    const fetchData = () => {
+    const fetchData = (e) => {
+        e.preventDefault();
         axios.get(`https://swapi.dev/api/${choice}/${id}`)
         .then((axiosResponse) => {
-            setDisplay(axiosResponse.data.results);
+            setDisplay(axiosResponse['data']);
         })
         .catch((axiosErr) => {
             console.log("Axios Error");
