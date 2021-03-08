@@ -23,18 +23,18 @@ const fetchPokemon = () => {
 
 return (
     <div>
-    <button onClick={fetchPokemon}>
-        Fetch Pokemon
-    </button>
-    <ul>
-    {
-        pokes.map((poke, index) => (
-        <div key={index}>
-            <li>{poke.name}</li>
-        </div>
-        ))
-    }
-    </ul>
+        <button onClick={fetchPokemon}>
+            Fetch Pokemon
+        </button>
+        <ul>
+        {
+            pokes.map((poke, index) => (
+            <div key={index}>
+                <li>{poke.name}</li>
+            </div>
+            ))
+        }
+        </ul>
     </div>
 )
 
