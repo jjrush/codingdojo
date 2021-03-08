@@ -6,16 +6,11 @@ const Display = (props) => {
 
     return (
         <div>
+            <h2>Name: 
             {
-                display ? () => {
-                    display.map((e, index) => (
-                        <div key={index}>
-                            <p>{e.name}</p>
-                        </div>
-                    ))
-                }
-                : null
+                display.name
             }
+            </h2>
         </div>
     )
 }
