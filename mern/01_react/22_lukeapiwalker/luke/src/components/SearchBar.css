@@ -1,0 +1,27 @@
+.search {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.options {
+    height: 50px;
+    padding: 5px;
+    width: 150px;
+    border-style: none;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.id-label {
+    margin-left: 20px;
+    width: 85px;
+}
+
+button {
+    width: 150px;
+    background-color: #0019F8;
+    color: white;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
