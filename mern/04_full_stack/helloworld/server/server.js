@@ -1,7 +1,11 @@
 const express = require('express');
+const cors = require('cors')    /* This is new */
+
 const app = express();
-const port = 8000;
+app.use(cors())                 /* This is new */
 
-require('./routes/person.routes')(app);  
+require('./routes/person.routes')(app);
 
-app.listen(port, () => console.log(`Listening on port: ${port}`) );
+app.listen(8000, () => {
+    console.log("Listening at Port 8000")
+})
