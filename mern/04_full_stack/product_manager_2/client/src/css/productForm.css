@@ -1,10 +1,10 @@
-label {
+.productForm label {
     color: grey;
 
 }
 
-p {
-background-color: lightgrey;
+.productForm p {
+    background-color: lightgrey;
     width: 350px;
     height: 40px;
     vertical-align: middle;
