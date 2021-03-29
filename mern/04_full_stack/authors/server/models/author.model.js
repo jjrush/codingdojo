@@ -11,7 +11,7 @@ function validateAuthorName(value) {
 const AuthorScheme = new mongoose.Schema({
     name: { 
         type: String,
-        required: true,
+        required: [true,"Must include a name"],
         validate: {
             validator: validateAuthorName,
             message: "Author name must be longer than 3 characters"

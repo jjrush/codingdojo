@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { navigate } from '@reach/router';
 import { Card } from '@material-ui/core';
 import { Link } from '@reach/router';
 import axios from 'axios';
 import '../css/authorForm.css';
 
-const AuthorForm = () => {
+const AuthorEdit = (props) => {
     const [ initName ] = useState("");
     const [ name, setName ] = useState(initName); 
-    const [ errors, setErrors ] = useState([]); 
+    const [errors, setErrors] = useState([]); 
+    const [loaded, setLoaded] = useState(false); 
+    let placeHolderName = "";
 
     const onSubmitHandler = e => {
         e.preventDefault();
-        setErrors([]);
-        console.log("name: " + name)
-        axios.post('http://localhost:8000/api/authors', {name})
+        axios.put('http://localhost:8000/api/authors/'+ props.id, {name})
+            .then(navigate("/"))
             .catch( err => {
-                console.log("Error, couldn't submit new author " + err);
-                // console.log(err.response.data.errors)
+                console.log("Error, couldn't update author " + err);
                 setErrors(err.response.data.errors);
             })
-            .then(navigate('/'))
     }
+
+    useEffect(() => {
+        setName(initName);
+        setLoaded(true);
+        axios.get('http://localhost:8000/api/authors/'+ props.id)
+            .then( res => {setName(res.data.name)})
+    }, [])
 
     return (
         <form className="authorForm" onSubmit={onSubmitHandler}>
@@ -51,4 +57,4 @@ const AuthorForm = () => {
         </form>
     )
 }
-export default AuthorForm;
+export default AuthorEdit;
