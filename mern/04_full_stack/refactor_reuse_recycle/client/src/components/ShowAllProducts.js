@@ -33,7 +33,7 @@ const ShowAllProducts = (props) => {
                                 <button className="btn-edit">Edit</button>
                             </Link>
                             <DeleteButton 
-                                productID={product._id} 
+                                productId={product._id} 
                                 successCallback={()=>removeFromDom(product._id)}
                             />
                         </div>

@@ -36,7 +36,7 @@ const ProductDetails = (props) => {
                         initPrice={product.price}
                         initDescription={product.description}
                     />
-                    <DeleteButton productId={product._id} successCallback={() => navigate("/")}/>
+                    <DeleteButton productId={product.id} successCallback={() => navigate("/")}/>
                 </>
             )}
         </div>
