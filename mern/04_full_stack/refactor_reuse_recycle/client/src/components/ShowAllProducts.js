@@ -6,16 +6,16 @@ import DeleteButton from './DeleteButton';
 import '../css/showAllProducts.css';
 
 const ShowAllProducts = (props) => {
-    const [products, setProducts] = useState([]);
+    const [ products, setProducts ] = useState([]);
 
     const removeFromDom = productID => {
-        setProducts(products.filter(product => product._id != productID))
+        setProducts(products.filter(product => product._id !== productID))
     }
 
     useEffect(() => {
         axios.get('http://localhost:8000/api/product')
             .then(res => setProducts(res.data));
-    }, [])
+    }, [products])
 
     return (
         <div className="showAllProducts">

@@ -8,13 +8,14 @@ import '../css/main.css'
 // components
 import ProductForm from '../components/ProductForm';
 import ShowAllProducts from '../components/ShowAllProducts';
+import { navigate } from '@reach/router';
 
 const Main = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
     const [loaded, setLoaded] = useState(false);
 
     const removeFromDom = productId => {
-        setProducts(products.filter(product => product._id != productId));
+        setProducts(products.filter(product => product._id !== productId));
     }
 
     useEffect(() => {
@@ -28,8 +29,11 @@ const Main = () => {
     const createProduct = product => {
         axios.post('http://localhost:8000/api/product', product)
             .then( res => {
-                setProducts([...products, res.data]);
+                products.push(res.data);
+                setProducts(products);
             })
+            .catch( err => {console.log("Error, couldn't submit new product " + err)})
+
     }
 
     return (
@@ -42,7 +46,13 @@ const Main = () => {
                 initDescription=""
             />
             <hr/>
-            { loaded && <ShowAllProducts products={products} removeFromDom={removeFromDom}/>}
+            { loaded && 
+                <ShowAllProducts 
+                    products={products} 
+                    setProducts = {setProducts}
+                    removeFromDom={removeFromDom}
+                />
+            }
         </div>
     )
 }
