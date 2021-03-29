@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { navigate } from '@reach/router';
-import AuthorForm from '../components/AuthorForm'
+import AuthorEdit from '../components/AuthorEdit'
 
 const AuthorDetails = (props) => {
     const [author, setAuthors] = useState({});
@@ -16,19 +16,13 @@ const AuthorDetails = (props) => {
             })
     }, [])
 
-    const updateAuthors = (e) => {
-        author.name = e.name;
-        axios.put(link, author)
-            .then(navigate("/"));
-    }
-
     return (
         <div>
             <p>Update an Author</p>
             { loaded && (
                 <>
-                    <AuthorForm
-                        onSubmit={updateAuthors}
+                    <AuthorEdit
+                        id={props.id}
                         initName={author.name}
                     />
                 </>
