@@ -3,8 +3,10 @@ import axios from 'axios';
 const DeleteButton = (props) => {
     const { productId, successCallback } = props;
     const deleteProduct = e => {
+        console.log(productId)
         axios.delete('http://localhost:8000/api/product/' + productId)
-            .then(res=>{
+            .then(res => {
+                console.log("here");
                 successCallback();
             })
     }
