@@ -36,43 +36,10 @@ const ProductDetails = (props) => {
                         initPrice={product.price}
                         initDescription={product.description}
                     />
-                    <DeleteButton productId={product.id} successCallback={() => navigate("/")}/>
+                    <DeleteButton productId={props.id} successCallback={() => navigate("/")}/>
                 </>
             )}
         </div>
     )
 }
 export default ProductDetails;
-
-
-
-
-
-
-
-
-            {/* <form onSubmit={updateProduct}>
-                <p>
-                    <label>Title</label><br />
-                    <input type="text" 
-                    name="title" 
-                    value={title} 
-                    onChange={(e) => { setTitle(e.target.value) }} />
-                </p>
-                <p>
-                    <label>Price</label><br />
-                    <input type="number" 
-                    name="price"
-                    value={price} 
-                    onChange={(e) => { setPrice(e.target.value) }} />
-                </p>
-                <p>
-                    <label>Description</label><br />
-                    <input type="text" 
-                    name="description"
-                    value={description} 
-                    onChange={(e) => { setDescription(e.target.value) }} />
-                </p>
-                <input type="submit" />
-                
-            </form> */}
