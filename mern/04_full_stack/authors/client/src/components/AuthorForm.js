@@ -15,12 +15,13 @@ const AuthorForm = () => {
         setErrors([]);
         console.log("name: " + name)
         axios.post('http://localhost:8000/api/authors', {name})
+            .then(() => {navigate('/')})    
             .catch( err => {
                 console.log("Error, couldn't submit new author " + err);
                 // console.log(err.response.data.errors)
                 setErrors(err.response.data.errors);
             })
-            .then(navigate('/'))
+            
     }
 
     return (
