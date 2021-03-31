@@ -37,6 +37,7 @@ io.on("connection", socket => {
     // NOTE: "connection" is a BUILT IN events listener
 
 
+    // a client has registered a new message to the server
     socket.on("new_message", data => {
         // send a message with "data" to ALL clients EXCEPT for the one that emitted the
     	//     "new_message" event
@@ -44,10 +45,11 @@ io.on("connection", socket => {
         socket.broadcast.emit("update_other_clients", data);
     });
 
+    // when a new client connects send them the messages we have so far
     socket.on("new_client_connected", () => {
         // respond to the client that just pinged us
         if ( messages.length > 0)
-            socket.send(messages);
+            socket.emit(messages);
     });
 });
 
