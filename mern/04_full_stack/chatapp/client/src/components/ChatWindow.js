@@ -25,10 +25,17 @@ const ChatWindow = (props) => {
 
     useEffect(() => {
         if ( !loaded ) {
+            // let the server know we just connected as a new client
             socket.emit("new_client_connected", data => setMessages(data))
             setLoaded(true);
         }
         
+        // we just connected as a new client so load the server's messages
+        socket.on("new_client_connected", data => {
+            setMessages(data);
+            }
+        );
+
         socket.on("update_other_clients", msg => {
                 console.log("Incoming msg: " + msg);
                 setMessages(prevMessages => {
@@ -36,7 +43,6 @@ const ChatWindow = (props) => {
                 });
             }
         );
-        console.log(name);
     }, []);
 
     return (
