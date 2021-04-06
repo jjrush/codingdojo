@@ -1,0 +1,11 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    background-color: #062134;
+    min-height: 1105px;
+    width: 1000px;
+    margin: auto;
+}
