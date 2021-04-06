@@ -1,0 +1,54 @@
+.footer {
+    background-color: #DAEDFF;
+    width: 960px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.page-divider {
+    height: 2px;
+    background-color: black;
+    margin: auto;
+    width: 960px;
+}
+
+#footer-home-link {
+    color: #ABD3F2;
+}
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:link {
+    text-decoration: none;
+    color: #5A8BAF;
+}
+
+.footer a:visited {
+    text-decoration: none;
+    color: #5A8BAF;
+}
+
+.footer-navbar {
+    display: flex;
+    align-items: center;
+    width: 280px;
+	padding: 0px 5px;
+    margin-left: 340px;
+    line-height: 50px;
+    vertical-align: bottom;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 70%;
+}
+
+.footer-navbar ul {
+	list-style: none;
+	display: flex;
+	flex: 1 0 0%;
+    justify-content: space-between;
+}
+
+.footer-navbar li {
+    display: inline-block;
+    color: white;
+}
